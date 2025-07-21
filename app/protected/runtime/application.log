@@ -1,0 +1,77 @@
+2025/07/21 23:30:25 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent('db')
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/yiic.php(33): CApplication->run()
+#13 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic.php(7): require_once('/Users/admin/gi...')
+#14 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic(4): require_once('/Users/admin/gi...')
+#15 {main}
+---
+2025/07/21 23:32:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent('db')
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/yiic.php(33): CApplication->run()
+#13 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic.php(7): require_once('/Users/admin/gi...')
+#14 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic(4): require_once('/Users/admin/gi...')
+#15 {main}
+---
+2025/07/21 23:33:20 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent('db')
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/yiic.php(33): CApplication->run()
+#13 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic.php(7): require_once('/Users/admin/gi...')
+#14 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic(4): require_once('/Users/admin/gi...')
+#15 {main}
+---
+2025/07/21 23:36:35 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent('db')
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/yiic.php(33): CApplication->run()
+#13 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic.php(7): require_once('/Users/admin/gi...')
+#14 /Users/admin/git/Gaudium/Others/Desafio/app/protected/yiic(4): require_once('/Users/admin/gi...')
+#15 {main}
+---
+2025/07/21 23:37:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'desafio_fullstack_yii.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
