@@ -4,7 +4,6 @@
 ?>
 
 <div class="view">
-
 	<table class="table table-striped">
 		<thead>
 			<tr>

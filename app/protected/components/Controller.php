@@ -22,7 +22,6 @@ class Controller extends CController
 	 */
 	public $breadcrumbs = array();
 	public $navigationLinks = [];
-	public $dropdownLinks = [];
 
 	public function init()
 	{
@@ -30,14 +29,9 @@ class Controller extends CController
 
 		$this->navigationLinks = [
 			'Página inicial' => $this->createUrl('/site/index'),
-			'Passageiro' => $this->createUrl('/passageiro/index'),
-			'Motorista' => $this->createUrl('/motorista/index'),
+			'Passageiro' => $this->createUrl('/passageiro/admin'),
+			'Motorista' => $this->createUrl('/motorista/admin'),
 			'Corridas' => $this->createUrl('/corrida/index'),
-		];
-
-		$this->dropdownLinks = [
-			'Perfil' => $this->createUrl('usuario/perfil'),
-			'Configurações' => $this->createUrl('usuario/config'),
 		];
 	}
 }

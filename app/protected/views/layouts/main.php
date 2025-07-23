@@ -34,7 +34,7 @@
 						<img src="https://avatars.githubusercontent.com/u/89052600?v=4" alt="mdo" width="32" height="32" class="rounded-circle">
 					</a>
 					<ul class="dropdown-menu text-small">
-						<?php foreach ($this->dropdownLinks as $title => $link): ?>
+						<?php foreach ($this->navigationLinks as $title => $link): ?>
 							<li><a class="dropdown-item" href="<?php echo $link; ?>"><?php echo $title; ?></a></li>
 						<?php endforeach; ?>
 						<li>
