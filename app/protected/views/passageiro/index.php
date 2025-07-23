@@ -8,6 +8,7 @@ $this->breadcrumbs = array(
 
 $this->menu = array(
 	array('label' => 'Create Passageiro', 'url' => array('create')),
+	array('label' => 'Create Passageiro', 'url' => array('create')),
 	array('label' => 'Manage Passageiro', 'url' => array('admin')),
 );
 ?>
