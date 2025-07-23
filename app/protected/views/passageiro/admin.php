@@ -26,37 +26,75 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Passageiros</h1>
 
-<p>
+<!-- <p>
 	You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
 	or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+</p> -->
 
-<?php echo CHtml::link('Advanced Search', '#', array('class' => 'search-button')); ?>
+<div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+	<h1>Passageiros</h1>
+
+	<button type="button" class="btn btn-primary">
+		<?php echo CHtml::link('Pesquisa avançada', '#', array('class' => 'search-button text-white text-decoration-none')); ?>
+	</button>
+</div>
+<!-- search-form -->
 <div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search', array(
 		'model' => $model,
 	)); ?>
-</div><!-- search-form -->
+</div>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id' => 'passageiro-grid',
 	'dataProvider' => $model->search(),
 	'filter' => $model,
+	'itemsCssClass' => 'table table-striped table-hover',
 	'columns' => array(
-		'id',
-		'nome',
-		'nascimento',
-		'email',
-		'telefone',
-		'data_hora_status',
+		[
+			'name' => 'id',
+			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
+			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
+		],
+		[
+			'name' => 'nome',
+			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
+			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
+		],
+		[
+			'name' => 'nascimento',
+			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
+			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
+		],
+		[
+			'name' => 'email',
+			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
+			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
+		],
+		[
+			'name' => 'telefone',
+			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
+			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
+		],
+		[
+			'name' => 'data_hora_status',
+			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
+			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
+		],
 		/*
 		'status',
 		'obs',
 		*/
 		array(
+			'name' => 'status',
+			'htmlOptions' => array('class' => 'text-dark text-decoration-none'),
+			// 'filterHtmlOptions' => ['class' => 'bg-warning']
+		),
+		array(
 			'class' => 'CButtonColumn',
+			'htmlOptions' => array('class' => 'actions-cell'),
+
 		),
 	),
 )); ?>

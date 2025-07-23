@@ -4,55 +4,70 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="wide form">
+<?php $form = $this->beginWidget('CActiveForm', array(
+	'action' => Yii::app()->createUrl($this->route),
+	'method' => 'get',
+)); ?>
+<div class="wide form mt-3">
 
-	<?php $form = $this->beginWidget('CActiveForm', array(
-		'action' => Yii::app()->createUrl($this->route),
-		'method' => 'get',
-	)); ?>
+	<section>
+		<div class="row">
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'id'); ?>
+				</p>
+				<?php echo $form->textField($model, 'id', ['class' => 'form-control']); ?>
+			</div>
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'nome'); ?>
+				</p>
+				<?php echo $form->textField($model, 'nome', ['class' => 'form-control'], array('maxlength' => 255)); ?>
+			</div>
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'nascimento'); ?>
+				</p>
+				<?php echo $form->textField($model, 'nascimento', ['class' => 'form-control']); ?>
+			</div>
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'email'); ?>
+				</p>
+				<?php echo $form->textField($model, 'email', ['class' => 'form-control'], array('maxlength' => 255)); ?>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'telefone'); ?>
+				</p>
+				<?php echo $form->textField($model, 'telefone', ['class' => 'form-control'], array('maxlength' => 255)); ?>
+			</div>
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'data_hora_status'); ?>
+				</p>
+				<?php echo $form->textField($model, 'data_hora_status', ['class' => 'form-control']); ?>
+			</div>
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'status'); ?>
+				</p>
+				<?php echo $form->textField($model, 'status', ['class' => 'form-control'], array('maxlength' => 1)); ?>
+			</div>
+			<div class="col-md-3 mb-4">
+				<p class="mb-2">
+					<?php echo $form->label($model, 'obs'); ?>
+				</p>
+				<?php echo $form->textField($model, 'obs', ['class' => 'form-control'], array('maxlength' => 200)); ?>
+			</div>
+		</div>
+	</section>
 
-	<div class="row">
-		<?php echo $form->label($model, 'id'); ?> AAaAAAAAA
-		<?php echo $form->textField($model, 'id'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->label($model, 'nome'); ?>
-		<?php echo $form->textField($model, 'nome', array('size' => 60, 'maxlength' => 255)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'nascimento'); ?>
-		<?php echo $form->textField($model, 'nascimento'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'email'); ?>
-		<?php echo $form->textField($model, 'email', array('size' => 60, 'maxlength' => 255)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'telefone'); ?>
-		<?php echo $form->textField($model, 'telefone', array('size' => 60, 'maxlength' => 255)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'data_hora_status'); ?>
-		<?php echo $form->textField($model, 'data_hora_status'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'status'); ?>
-		<?php echo $form->textField($model, 'status', array('size' => 1, 'maxlength' => 1)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'obs'); ?>
-		<?php echo $form->textField($model, 'obs', array('size' => 60, 'maxlength' => 200)); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<div class="row buttons mt-5">
+		<?php echo CHtml::submitButton('Pesquisar', ['class' => 'btn btn-outline-secondary']); ?>
 	</div>
 
 	<?php $this->endWidget(); ?>

@@ -1,0 +1,8 @@
+#passageiro-grid table thead th a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.actions-cell {
+    min-width: 75px;
+}

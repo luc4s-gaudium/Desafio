@@ -462,3 +462,428 @@ in /Users/admin/git/Gaudium/Others/Desafio/app/index.php (13)
 2025/07/23 20:29:20 [warning] [application] Failed to set unsafe attribute "data_hora_status" of "Passageiro".
 in /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php (83)
 in /Users/admin/git/Gaudium/Others/Desafio/app/index.php (13)
+2025/07/23 20:33:21 [error] [exception.Error] Error: Class "CButtonColumn bg-primary" not found in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php:209
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro
+---
+2025/07/23 20:56:02 [error] [exception.Error] Error: Class "text-center actions-cell d-flex justify-content-around" not found in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php:209
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/index
+---
+2025/07/23 20:56:11 [error] [exception.Error] Error: Class "text-center actions-cell d-flex justify-content-around" not found in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php:209
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/index
+---
+2025/07/23 20:57:36 [error] [exception.CException] CException: Property "CDataColumn.0" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php(227): CComponent->__set('0', 'teste')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#10 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#22 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 20:57:46 [error] [exception.CException] CException: Property "CDataColumn.0" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php(227): CComponent->__set('0', 'data_hora_statu...')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#10 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#22 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 20:57:52 [error] [exception.CException] CException: Property "CDataColumn.0" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php(227): CComponent->__set('0', 'data_hora_statu...')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#10 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#22 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 20:57:52 [error] [exception.CException] CException: Property "CDataColumn.0" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php(227): CComponent->__set('0', 'data_hora_statu...')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#10 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#22 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 21:10:46 [error] [exception.CException] CException: Property "CGridView.headerHtmlOptions" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('headerHtmlOptio...', Array)
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(PassageiroController), 'CGridView', Array)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 21:11:52 [error] [exception.CException] CException: Property "CGridView.headerHtmlOptions" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('headerHtmlOptio...', 'bg-primary')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(PassageiroController), 'CGridView', Array)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 21:11:53 [error] [exception.CException] CException: Property "CGridView.headerHtmlOptions" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('headerHtmlOptio...', 'bg-primary')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(PassageiroController), 'CGridView', Array)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 21:12:09 [error] [exception.CException] CException: Property "CGridView.headerHtmlOptions" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('headerHtmlOptio...', 'bg-primary')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(PassageiroController), 'CGridView', Array)
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 21:31:35 [error] [exception.CException] CException: Property "CDataColumn.0" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php(227): CComponent->__set('0', 'id')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#10 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#22 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 21:32:44 [error] [exception.CException] CException: Property "CDataColumn.0" is not defined. in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/YiiBase.php(227): CComponent->__set('0', Array)
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(404): YiiBase::createComponent(Array, Object(CGridView))
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/zii/widgets/grid/CGridView.php(375): CGridView->initColumns()
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(147): CGridView->init()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(43): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#10 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): CController->render('admin', Array)
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#21 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/admi...')
+#22 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=passageiro/admin
+HTTP_REFERER=http://localhost:8888/
+---
+2025/07/23 21:46:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "motorista/admin". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('motorista/admin')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=motorista/admin
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/07/23 21:46:49 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "corrida/index". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/index')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=corrida/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/07/23 22:08:51 [error] [php] Undefined variable $form (/Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/_search.php:13)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require()
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): PassageiroController->renderInternal()
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): PassageiroController->renderFile()
+#3 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php(44): PassageiroController->renderPartial()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require()
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): PassageiroController->renderInternal()
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): PassageiroController->renderFile()
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): PassageiroController->renderPartial()
+#8 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php(128): PassageiroController->render()
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): PassageiroController->actionAdmin()
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): PassageiroController->runAction()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): PassageiroController->filterAccessControl()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): PassageiroController->runActionWithFilters()
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): PassageiroController->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=passageiro/admin
+in /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/_search.php (13)
+in /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/passageiro/admin.php (44)
+in /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/PassageiroController.php (128)
