@@ -1,4 +1,3 @@
-<?php /* @var $this Controller */ ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,7 +10,6 @@
 </head>
 
 <body>
-
 	<header class="p-3 mb-3 border-bottom">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -22,25 +20,27 @@
 
 				</a>
 				<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-4">
-					<li><a href="#" class="nav-link px-2 link-secondary">Página inicial</a></li>
+					<?php foreach ($this->navigationLinks as $title => $link): ?>
+						<li><a href="<?php echo $link; ?>" class="nav-link px-2 link-secondary"><?php echo $title; ?></a></li>
+					<?php endforeach; ?>
 				</ul>
 				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search"> <input type="search"
-						class="form-control" placeholder="Search..." aria-label="Search"> </form>
+						class="form-control" placeholder="Pesquisar..." aria-label="Search"> </form>
 				<div class="dropdown text-end">
 					<a href="#"
 						class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
 						data-bs-toggle="dropdown"
 						aria-expanded="false">
-						<img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+						<img src="https://avatars.githubusercontent.com/u/89052600?v=4" alt="mdo" width="32" height="32" class="rounded-circle">
 					</a>
 					<ul class="dropdown-menu text-small">
-						<li><a class="dropdown-item" href="#">CriarÏ</a></li>
-						<li><a class="dropdown-item" href="#">Configurações</a></li>
-						<li><a class="dropdown-item" href="#">Perfil</a></li>
+						<?php foreach ($this->dropdownLinks as $title => $link): ?>
+							<li><a class="dropdown-item" href="<?php echo $link; ?>"><?php echo $title; ?></a></li>
+						<?php endforeach; ?>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="#">Sair</a></li>
+						<li><a class="dropdown-item" href="/">Sair</a></li>
 					</ul>
 				</div>
 			</div>
@@ -62,7 +62,9 @@
 				</figure>
 			</a>
 			<ul class="nav col-md-4 justify-content-end">
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Página inicial</a></li>
+				<?php foreach ($this->navigationLinks as $title => $link): ?>
+					<li class="nav-item"><a href="<?php echo $link; ?>" class="nav-link px-2 text-body-secondary"><?php echo $title; ?></a></li>
+				<?php endforeach; ?>
 			</ul>
 		</div>
 	</footer>
