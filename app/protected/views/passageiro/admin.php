@@ -32,12 +32,14 @@ $('.search-form form').submit(function(){
 	or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
 </p> -->
 
-<div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+<div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mb-2">
 	<h1>Passageiros</h1>
-
-	<button type="button" class="btn btn-primary">
-		<?php echo CHtml::link('Pesquisa avançada', '#', array('class' => 'search-button text-white text-decoration-none')); ?>
-	</button>
+	<div>
+		<button type="button" class="btn btn-primary">
+			<?php echo CHtml::link('Pesquisa avançada', '#', array('class' => 'search-button text-white text-decoration-none')); ?>
+		</button>
+		<?php echo CHtml::link('+', array('create'), array('class' => 'btn btn-success')); ?>
+	</div>
 </div>
 <!-- search-form -->
 <div class="search-form" style="display:none">

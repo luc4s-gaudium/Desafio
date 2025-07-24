@@ -58,6 +58,7 @@ class PassageiroController extends Controller
 
 		if (isset($_POST['Passageiro'])) {
 			$model->attributes = $_POST['Passageiro'];
+			$model->data_hora_status = new CDbExpression('NOW()');
 			if ($model->save())
 				$this->redirect(array('view', 'id' => $model->id));
 		}
@@ -81,6 +82,7 @@ class PassageiroController extends Controller
 
 		if (isset($_POST['Passageiro'])) {
 			$model->attributes = $_POST['Passageiro'];
+			$model->data_hora_status = new CDbExpression('NOW()');
 			if ($model->save())
 				$this->redirect(array('view', 'id' => $model->id));
 		}

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header class="p-3 mb-3 border-bottom">
+	<header class="p-3 m-0 border-bottom">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 				<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -47,11 +47,11 @@
 		</div>
 	</header>
 
-	<main class="container">
+	<main class="container py-5">
 		<?php echo $content; ?>
 	</main>
 
-	<footer class="border-top py-3 my-4">
+	<footer class="border-top py-3 m-0">
 		<div class="d-flex flex-wrap justify-content-between align-items-center container">
 			<p class="col-md-4 mb-0 text-body-secondary">© 2025 Gaudium, Inc</p>
 			<a href="/"

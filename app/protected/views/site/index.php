@@ -1,6 +1,6 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name;
+$this->pageTitle = Yii::app()->name;
 ?>
-<p>teste</p>
+<p>Página inicial</p>
