@@ -1,4 +1,5 @@
-#passageiro-grid table thead th a {
+#passageiro-grid table thead th a,
+#motorista-grid table thead th a {
     color: inherit;
     text-decoration: none;
 }
