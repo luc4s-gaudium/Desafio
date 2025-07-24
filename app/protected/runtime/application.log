@@ -1787,3 +1787,56 @@ Stack trace:
 REQUEST_URI=/index.php?r=passageiro/create
 HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
 ---
+2025/07/24 11:48:20 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "motorista/admin". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('motorista/admin')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=motorista/admin
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/07/24 11:52:52 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php:486
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/07/24 11:53:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php:486
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/07/24 11:53:29 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php:486
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/
+---
+2025/07/24 11:54:47 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php:486
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/
+---
