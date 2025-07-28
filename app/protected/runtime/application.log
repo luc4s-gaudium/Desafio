@@ -1840,3 +1840,49 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/login
 HTTP_REFERER=http://localhost:8888/index.php?r=motorista/
 ---
+2025/07/24 12:42:11 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "corrida/index". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/index')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=corrida/index
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/admin
+---
+2025/07/24 12:52:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "corrida/index". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/index')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=corrida/index
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/admin
+---
+2025/07/28 10:39:37 [error] [php] Array to string conversion (/Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php:126)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require()
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): MotoristaController->renderInternal()
+#2 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): MotoristaController->renderFile()
+#3 /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/motorista/admin.php(35): MotoristaController->renderPartial()
+#4 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(126): require()
+#5 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CBaseController.php(95): MotoristaController->renderInternal()
+#6 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(872): MotoristaController->renderFile()
+#7 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(785): MotoristaController->renderPartial()
+#8 /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/MotoristaController.php(128): MotoristaController->render()
+#9 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/actions/CInlineAction.php(49): MotoristaController->actionAdmin()
+#10 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(134): MotoristaController->runAction()
+#12 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CInlineFilter.php(58): MotoristaController->filterAccessControl()
+#15 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CController.php(265): MotoristaController->runActionWithFilters()
+#18 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(282): MotoristaController->run()
+#19 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=motorista/admin
+in /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/motorista/admin.php (35)
+in /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/MotoristaController.php (128)
+in /Users/admin/git/Gaudium/Others/Desafio/app/index.php (13)
