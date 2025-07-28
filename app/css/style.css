@@ -1,0 +1,14 @@
+#passageiro-grid table thead th a,
+#motorista-grid table thead th a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.actions-cell {
+    min-width: 75px;
+}
+
+.fs-7 {
+    font-size: 0.75rem;
+    ;
+}
