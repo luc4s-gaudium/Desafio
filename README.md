@@ -15,3 +15,8 @@ php protected/yiic migrate create create_motorista_table
 ```
 php protected/yiic migrate
 ```
+### Comando para executar migration de corrida:
+
+```
+php protected/yiic migrate
+```
