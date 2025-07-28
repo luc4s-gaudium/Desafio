@@ -1895,3 +1895,12 @@ Stack trace:
 REQUEST_URI=/index.php?r=corrida/index
 HTTP_REFERER=http://localhost:8888/index.php?r=motorista/admin
 ---
+2025/07/28 20:21:41 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "corrida/index". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/index')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=corrida/index
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/admin
+---
