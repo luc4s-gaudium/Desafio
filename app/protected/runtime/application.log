@@ -1886,3 +1886,12 @@ REQUEST_URI=/index.php?r=motorista/admin
 in /Users/admin/git/Gaudium/Others/Desafio/app/protected/views/motorista/admin.php (35)
 in /Users/admin/git/Gaudium/Others/Desafio/app/protected/controllers/MotoristaController.php (128)
 in /Users/admin/git/Gaudium/Others/Desafio/app/index.php (13)
+2025/07/28 11:06:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "corrida/index". in /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/index')
+#1 /Users/admin/git/Gaudium/Others/Yii 1.1/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Desafio/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=corrida/index
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/admin
+---

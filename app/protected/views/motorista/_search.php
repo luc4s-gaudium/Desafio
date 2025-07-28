@@ -55,7 +55,7 @@
 				<p class="mb-2">
 					<?php echo $form->label($model, 'data_hora_status'); ?>
 				</p>
-				<?php echo $form->textField($model, 'data_hora_status', array('class' => 'form-control')); ?>˝
+				<?php echo $form->textField($model, 'data_hora_status', array('class' => 'form-control')); ?>
 			</div>
 			<div class="col-md-3 mb-4">
 				<p class="mb-2">

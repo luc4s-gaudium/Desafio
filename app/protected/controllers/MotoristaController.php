@@ -58,6 +58,8 @@ class MotoristaController extends Controller
 
 		if (isset($_POST['Motorista'])) {
 			$model->attributes = $_POST['Motorista'];
+			$model->data_hora_status = new CDbExpression('NOW()');
+
 			if ($model->save())
 				$this->redirect(array('view', 'id' => $model->id));
 		}
@@ -81,6 +83,8 @@ class MotoristaController extends Controller
 
 		if (isset($_POST['Motorista'])) {
 			$model->attributes = $_POST['Motorista'];
+			$model->data_hora_status = new CDbExpression('NOW()');
+			
 			if ($model->save())
 				$this->redirect(array('view', 'id' => $model->id));
 		}

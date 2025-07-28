@@ -29,18 +29,65 @@ class Motorista extends CActiveRecord
 	 */
 	public function rules()
 	{
-		// NOTE: you should only define rules for those attributes that
-		// will receive user inputs.
 		return array(
-			array('nome, nascimento, email, telefone, placa_veiculo, data_hora_status', 'required'),
-			array('nome, email, telefone', 'length', 'max'=>255),
-			array('placa_veiculo', 'length', 'max'=>8),
-			array('status', 'length', 'max'=>1),
-			array('obs', 'length', 'max'=>200),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('id, nome, nascimento, email, telefone, placa_veiculo, status, data_hora_status, obs', 'safe', 'on'=>'search'),
+			// Campos obrigatórios
+			array('nome, nascimento, email, telefone, placa_veiculo, status', 'required'),
+
+			// Validações de formato (copiadas do Passageiro)
+			array('email', 'email', 'message' => 'O formato do e-mail é inválido.'),
+			array('status', 'in', 'range' => array('A', 'I'), 'message' => 'O status deve ser "A" ou "I".'),
+			array('telefone', 'match', 'pattern' => '/^\+\d{2}-\d{2}-\d{8,9}$/', 'message' => 'O formato do telefone deve ser +99-99-999999999.'),
+
+			// Validações customizadas
+			array('nome', 'validarNomeCompleto'),
+			array('placa_veiculo', 'validarPlacaVeiculo'),
+
+			// Validações de tamanho
+			array('nome, email, telefone', 'length', 'max' => 255),
+			array('placa_veiculo', 'length', 'max' => 8),
+			array('obs', 'length', 'max' => 200),
+
+			// Regra para a busca
+			array('id, nome, nascimento, email, telefone, placa_veiculo, status, data_hora_status, obs', 'safe', 'on' => 'search'),
 		);
+	}
+
+	/**
+	 * Validador customizado para o nome completo (mesma regra do passageiro).
+	 */
+	public function validarNomeCompleto($attribute, $params)
+	{
+		if (!$this->hasErrors($attribute)) {
+			$nomeCompleto = trim($this->$attribute);
+			$partesNome = array_filter(explode(' ', $nomeCompleto));
+			if (count($partesNome) < 2) {
+				$this->addError($attribute, 'O nome completo deve ter no mínimo duas palavras.');
+				return;
+			}
+			foreach ($partesNome as $palavra) {
+				if (mb_strlen($palavra, 'UTF-8') < 3) {
+					$this->addError($attribute, 'Cada palavra do nome deve ter no mínimo 3 caracteres.');
+					return;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Validador customizado para a placa do veículo (formato antigo ou Mercosul).
+	 */
+	public function validarPlacaVeiculo($attribute, $params)
+	{
+		if (!$this->hasErrors($attribute)) {
+			$placa = $this->$attribute;
+			// A Expressão Regular abaixo verifica os dois formatos:
+			// ^[A-Z]{3}-\d{4}$  -> Formato AAA-9999
+			// |                -> OU
+			// ^[A-Z]{3}\d[A-Z]\d{2}$ -> Formato AAA9A99
+			if (!preg_match('/^[A-Z]{3}-\d{4}$|^[A-Z]{3}\d[A-Z]\d{2}$/', $placa)) {
+				$this->addError($attribute, 'A placa do veículo não está em um formato válido (AAA-9999 ou AAA9A99).');
+			}
+		}
 	}
 
 	/**
@@ -50,8 +97,7 @@ class Motorista extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
-		);
+		return array();
 	}
 
 	/**
@@ -88,20 +134,20 @@ class Motorista extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('nome',$this->nome,true);
-		$criteria->compare('nascimento',$this->nascimento,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('telefone',$this->telefone,true);
-		$criteria->compare('placa_veiculo',$this->placa_veiculo,true);
-		$criteria->compare('status',$this->status,true);
-		$criteria->compare('data_hora_status',$this->data_hora_status,true);
-		$criteria->compare('obs',$this->obs,true);
+		$criteria->compare('id', $this->id);
+		$criteria->compare('nome', $this->nome, true);
+		$criteria->compare('nascimento', $this->nascimento, true);
+		$criteria->compare('email', $this->email, true);
+		$criteria->compare('telefone', $this->telefone, true);
+		$criteria->compare('placa_veiculo', $this->placa_veiculo, true);
+		$criteria->compare('status', $this->status, true);
+		$criteria->compare('data_hora_status', $this->data_hora_status, true);
+		$criteria->compare('obs', $this->obs, true);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -111,7 +157,7 @@ class Motorista extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Motorista the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}
