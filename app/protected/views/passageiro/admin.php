@@ -52,32 +52,26 @@ $('.search-form form').submit(function(){
 		[
 			'name' => 'id',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'nome',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'nascimento',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'email',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'telefone',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'data_hora_status',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		/*
 		'status',
@@ -86,7 +80,6 @@ $('.search-form form').submit(function(){
 		array(
 			'name' => 'status',
 			'htmlOptions' => array('class' => 'text-dark text-decoration-none'),
-			// 'filterHtmlOptions' => ['class' => 'bg-warning']
 		),
 		array(
 			'class' => 'CButtonColumn',
